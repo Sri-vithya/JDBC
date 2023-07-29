@@ -1,12 +1,15 @@
-show databases;
-create database srii;
-show tables;
-use srii;
-create table employ(
-e_id int primary key,
-ename varchar(30),
-sal int);
+create database busresv;
+use busresv;
+create table bus(
+id int primary key,
+ac boolean, capacity int);
 
- insert into employ values(1,'sri',123);
-update employ set sal=122 where e_id=1;
- select * from employ;
+insert into bus values(1,1,40);
+
+select * from bus;
+
+create table booking(
+passenger_name varchar(50),
+bus_no int,
+travel_date date);
+select * from booking;
